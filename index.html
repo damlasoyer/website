@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Damla Soyer — Brand Designer, Creative Director & Design Researcher</title>
+  <meta name="title" content="Damla Soyer — Brand Designer, Creative Director & Design Researcher">
+  <meta name="description" content="Damla Soyer is a brand designer, creative director, and design researcher working across identity, objects, and space. Berlin / Istanbul / Seoul.">
+  <meta name="keywords" content="Damla Soyer, brand designer, creative director, design researcher, identity design, Berlin designer, speculative design">
+  <meta name="author" content="Damla Soyer">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://damlasoyer.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://damlasoyer.com/">
+  <meta property="og:title" content="Damla Soyer — Brand Designer, Creative Director & Design Researcher">
+  <meta property="og:description" content="Damla Soyer is a brand designer, creative director, and design researcher working across identity, objects, and space. Berlin / Istanbul / Seoul.">
+  <meta property="og:image" content="https://damlasoyer.com/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Damla Soyer">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://damlasoyer.com/">
+  <meta name="twitter:title" content="Damla Soyer — Brand Designer, Creative Director & Design Researcher">
+  <meta name="twitter:description" content="Damla Soyer is a brand designer, creative director, and design researcher working across identity, objects, and space. Berlin / Istanbul / Seoul.">
+  <meta name="twitter:image" content="https://damlasoyer.com/images/og-image.png">
+  <meta name="twitter:creator" content="@damlasoyer">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Damla Soyer",
+    "url": "https://damlasoyer.com",
+    "image": "https://damlasoyer.com/images/og-image.png",
+    "jobTitle": "Brand Designer, Creative Director & Design Researcher",
+    "description": "Brand designer, creative director, and design researcher working across identity, objects, and space.",
+    "sameAs": [
+      "https://www.instagram.com/soyerdamla/",
+      "https://x.com/damlasoyer",
+      "https://www.linkedin.com/in/damlasoyer/"
+    ],
+    "knowsAbout": [
+      "Brand Identity",
+      "Creative Direction",
+      "Design Research",
+      "Speculative Design",
+      "Visual Design"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Damla Soyer",
+    "url": "https://damlasoyer.com",
+    "author": {
+      "@type": "Person",
+      "name": "Damla Soyer"
+    }
+  }
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f3f3f1;
+      font-family: Helvetica, Arial, sans-serif;
+      color: #111;
+      letter-spacing: -0.01em;
+      overflow-x: hidden;
+    }
+
+    /* ===== OUTER FRAME ===== */
+    .frame {
+      padding: 2.5vw;
+      height: 100vh;
+      min-height: 100vh;
+    }
+
+    /* ===== 8×5 GRID ===== */
+    .layout {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      height: 100%;
+      width: 100%;
+    }
+
+    /* ── ROWS 1-2: images span columns 5-8, rows 1-2 ── */
+    .images {
+      grid-column: 5 / 8;
+      grid-row: 1 / 3;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      overflow: hidden;
+    }
+
+    .images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ── ROW 3: about (col 1-2) / name (col 5) / description (col 8) ── */
+    .news-label-title {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      font-size: clamp(10px, 0.78vw, 13px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+
+    .about {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      font-size: clamp(10px, 0.78vw, 13px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .about:hover {
+      color: #999;
+    }
+
+    .title {
+      grid-column: 5 / 7;
+      grid-row: 3 / 4;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0;
+      font-size: clamp(18px, 1.6vw, 28px);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+
+    .description {
+      grid-column: 7 / 8;
+      grid-row: 3 / 4;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      font-size: clamp(10px, 0.70vw, 12px);
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    /* ── ROWS 2-5: hover image area (cols 3-4) ── */
+    .hover-image-area {
+      grid-column: 2 / 5;
+      grid-row: 4 / 5;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hover-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+      pointer-events: none;
+    }
+
+    .hover-placeholder.active {
+      opacity: 1;
+    }
+
+    .hover-placeholder img,
+    .hover-placeholder video {
+      max-width: 80%;
+      max-height: 80%;
+      object-fit: contain;
+    }
+
+    .hover-placeholder-text {
+      font-size: clamp(36px, 5vw, 80px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: #111;
+      user-select: none;
+    }
+
+    .hover-placeholder[data-style="handdrawn"] .hover-placeholder-text {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+
+    .hover-placeholder[data-style="spaced"] .hover-placeholder-text {
+      font-weight: 400;
+      letter-spacing: 0.4em;
+      font-size: clamp(18px, 2.2vw, 36px);
+      text-transform: lowercase;
+    }
+
+    /* ── ROWS 4-5: sections left column (01–04, cols 5-6) ── */
+    .sections {
+      grid-column: 5 / 6;
+      grid-row: 4 / 6;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* ── ROWS 4-5: sections right column (05–06, col 7) ── */
+    .sections-right {
+      grid-column: 6 / 7;
+      grid-row: 4 / 5;
+      padding: 0;
+      padding-bottom: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .section-item {
+      line-height: 1.15;
+      transition: opacity 0.18s ease, color 0.18s ease;
+      cursor: pointer;
+    }
+
+    /* Hover dimming within each column */
+    .sections:hover .section-item,
+    .sections-right:hover .section-item {
+      opacity: 0.3;
+      color: #999;
+    }
+
+    .sections .section-item:hover,
+    .sections-right .section-item:hover {
+      opacity: 1;
+      color: #111;
+    }
+
+    /* Cross-column hover dimming */
+    .layout:has(.sections:hover) .sections-right .section-item,
+    .layout:has(.sections-right:hover) .sections .section-item {
+      opacity: 0.3;
+      color: #999;
+    }
+
+    .layout:has(.sections:hover) .sections-right .section-item:hover,
+    .layout:has(.sections-right:hover) .sections .section-item:hover {
+      opacity: 1;
+      color: #111;
+    }
+
+    /* Section header */
+    .section-header {
+      font-size: clamp(9px, 0.68vw, 11px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 2px;
+    }
+
+    .section-subs {
+      padding-left: 1.9em;
+    }
+
+    .sub {
+      font-size: clamp(8px, 0.58vw, 10px);
+      font-weight: 400;
+      line-height: 1.2;
+      color: #111;
+    }
+
+    /* ── ROW 5 col 1: year ── */
+    .year {
+      grid-column: 1 / 2;
+      grid-row: 5 / 6;
+      display: flex;
+      align-items: flex-end;
+      padding: 0;
+      font-size: clamp(9px, 0.68vw, 11px);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      opacity: 0.5;
+    }
+
+    /* ── ROWS 4-5 col 1-2: news ── */
+    .news {
+      grid-column: 1 / 3;
+      grid-row: 4 / 6;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 1.2em;
+      font-size: clamp(8px, 0.58vw, 10px);
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+      color: #111;
+    }
+
+    .news-block {
+      font-weight: 400;
+    }
+
+    .news-label {
+      font-weight: 700;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 820px) {
+      .frame {
+        padding: 24px 18px 36px 18px;
+        height: auto;
+        min-height: 100vh;
+      }
+
+      .layout {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+      }
+
+      .title {
+        font-size: 18px;
+        padding: 0;
+        margin-bottom: 12px;
+        order: 1;
+      }
+
+      .description {
+        font-size: 10px;
+        line-height: 1.4;
+        padding: 0;
+        margin-bottom: 8px;
+        order: 2;
+      }
+
+      .about {
+        font-size: 10px;
+        padding: 0;
+        margin-bottom: 20px;
+        order: 3;
+      }
+
+      .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        height: auto;
+        margin-bottom: 28px;
+        order: 4;
+      }
+
+      .images img {
+        aspect-ratio: 1 / 1.2;
+      }
+
+      .hover-image-area {
+        display: none;
+        order: 5;
+      }
+
+      .sections {
+        padding: 0;
+        gap: 14px;
+        justify-content: flex-start;
+        order: 6;
+      }
+
+      .sections-right {
+        padding: 0;
+        gap: 14px;
+        justify-content: flex-start;
+        order: 7;
+        margin-top: 14px;
+      }
+
+      .sections:hover .section-item,
+      .sections-right:hover .section-item {
+        opacity: 1;
+        color: #111;
+      }
+
+      .layout:has(.sections:hover) .sections-right .section-item,
+      .layout:has(.sections-right:hover) .sections .section-item {
+        opacity: 1;
+        color: #111;
+      }
+
+      .sections-right .section-item + .section-item {
+        margin-top: 0;
+      }
+
+      .section-title {
+        font-size: 11px;
+      }
+
+      .sub {
+        font-size: 10px;
+      }
+
+      .year {
+        padding: 28px 0 0 0;
+        order: 8;
+      }
+
+      .news {
+        padding: 0;
+        margin-bottom: 28px;
+        order: 5;
+        font-size: 9px;
+        gap: 14px;
+      }
+
+      .news-label-title {
+        font-size: 10px;
+        padding: 0;
+        margin-bottom: 8px;
+        order: 5;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="frame">
+<div class="layout">
+
+  <!-- Rows 1-2: 3 images, columns 5-8 -->
+  <div class="images">
+    <img src="images/img1-damlasoyer.jpg" alt="">
+    <img src="images/img2.jpg" alt="">
+    <img src="images/img3-damlasoyer.jpg" alt="">
+  </div>
+
+  <!-- Row 3: news label / name / description -->
+  <div class="news-label-title">News</div>
+  <div class="title">damla soyer</div>
+  <div class="description">
+    Damla Soyer is a creative director and design researcher working across objects, images, and space. Her work explores identity, materiality, and ritual through brand systems and spatial experiences.
+  </div>
+
+  <!-- Rows 4-5 left col 1-2: news -->
+  <div class="news">
+    <div class="news-block">
+      <span class="news-label">Upcoming</span> — PROTOKOL 001: Seoul<br>
+Exhibition, June 2026<br><br>
+PROTOKOL 001: Seoul is the first iteration of<br>
+PROTOKOL, an ongoing exhibition series that<br>
+treats speculative experience as documented<br>
+procedure. Each edition is anchored to a city<br>
+and presents a set of protocols — instructional<br>
+texts approaching altered, synthetic, or imagined<br>
+states through the formal language of the<br>
+technical manual.<br><br>
+Presented as part of a three-artist exhibition<br>
+at FFK.
+    </div>
+    <div class="news-block">
+      <span class="news-label">Launched</span> — Studio DtN<br>
+      A multidisciplinary design practice working<br>
+      across visual systems, body objects, and<br>
+      spatial configurations.
+    </div>
+  </div>
+
+  <!-- Rows 2-5 mid: hover image area -->
+  <div class="hover-image-area">
+    <div class="hover-placeholder" data-section="about">
+      <img src="images/hover-about.gif" alt="">
+    </div>
+        <div class="hover-placeholder" data-section="works">
+      <img src="images/hover-works.gif" alt="">
+    </div>
+    <div class="hover-placeholder" data-section="experiments">
+      <img src="images/hover-experiments.gif" alt="">
+    </div>
+    <div class="hover-placeholder" data-section="cases">
+      <img src="images/hover-cases.gif" alt="">
+    </div>
+    <div class="hover-placeholder" data-section="texts">
+      <img src="images/hover-texts.gif" alt="">
+    </div>
+    <div class="hover-placeholder" data-section="art">
+      <img src="images/hover-art.gif" alt="">
+    </div>
+  </div>
+
+  <!-- Rows 4-5: sections left (01–04) -->
+  <div class="sections">
+    <div class="section-item" data-section="about">
+      <div class="section-header">01 — About &amp; CV </div>
+      <div class="section-subs">
+        <div class="sub">Resume</div>
+        <div class="sub">Background</div>
+        <div class="sub">Core Ideas</div>
+      </div>
+    </div>
+
+    <div class="section-item" data-section="works">
+      <div class="section-header">02 — Works</div>
+      <div class="section-subs">
+        <div class="sub">Selected Projects</div>
+        <div class="sub">Identity / Object / Space</div>
+        <div class="sub">Creative Direction</div>
+      </div>
+    </div>
+
+    <div class="section-item" data-section="experiments">
+      <div class="section-header">03 — Experiments</div>
+      <div class="section-subs">
+        <div class="sub">Digital and Media Work</div>
+        <div class="sub">Digital Fashion and Environments</div>
+        <div class="sub">Research and Prototypes</div>
+      </div>
+    </div>
+
+    <div class="section-item" data-section="cases">
+      <div class="section-header">04 — Case Studies</div>
+      <div class="section-subs">
+        <div class="sub">Research Cases</div>
+        <div class="sub">Everyday Environments</div>
+        <div class="sub">Objects / Graphics / Space</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rows 4-5: sections right (05–06) -->
+  <div class="sections-right">
+    <div class="section-item" data-section="texts">
+      <div class="section-header">05 — Texts</div>
+      <div class="section-subs">
+        <div class="sub">Essays</div>
+        <div class="sub">Papers</div>
+        <div class="sub">Theories</div>
+      </div>
+    </div>
+
+    <div class="section-item" data-section="art">
+      <div class="section-header">06 — Visual Design</div>
+      <div class="section-subs">
+        <div class="sub">Exhibitions</div>
+        <div class="sub">Visuals</div>
+        <div class="sub">Prints</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Year -->
+  <div class="year">© 2026 Damla Soyer</div>
+
+</div>
+</div>
+
+<script>
+  // === Section links ===
+  const sectionLinks = {
+    about: 'about.html',
+    works: 'works.html',
+    experiments: 'experiments.html',
+    cases: 'cases.html',
+    texts: 'texts.html',
+    art: 'art.html',
+  };
+
+  // === Section hover → show image in left panel ===
+  const items = document.querySelectorAll('.section-item');
+  const placeholders = document.querySelectorAll('.hover-placeholder');
+
+  items.forEach((item) => {
+    const sectionKey = item.dataset.section;
+
+    item.addEventListener('mouseenter', () => {
+      placeholders.forEach(p => {
+        if (p.dataset.section === sectionKey) {
+          p.classList.add('active');
+        } else {
+          p.classList.remove('active');
+        }
+      });
+    });
+
+    item.addEventListener('mouseleave', () => {
+      placeholders.forEach(p => p.classList.remove('active'));
+    });
+
+    item.addEventListener('click', () => {
+      const url = sectionLinks[sectionKey];
+      if (url) window.location.href = url;
+    });
+  });
+</script>
+
+</body>
+</html>

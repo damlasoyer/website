@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f3f3f1"/>
+
+  <!-- Top label: News-style marker -->
+  <text x="60" y="80" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="-0.4" fill="#111">
+    damlasoyer.com — 2026
+  </text>
+
+  <!-- Main name -->
+  <text x="60" y="340" font-family="Helvetica, Arial, sans-serif" font-size="120" font-weight="700" letter-spacing="-5" fill="#111">
+    damla soyer
+  </text>
+
+  <!-- Subtitle / role -->
+  <text x="60" y="410" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="400" letter-spacing="-0.8" fill="#111">
+    Brand Designer · Creative Director · Design Researcher
+  </text>
+
+  <!-- Bottom-left: location strip -->
+  <text x="60" y="560" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="400" letter-spacing="-0.3" fill="#111" opacity="0.6">
+    Berlin / Istanbul / Seoul
+  </text>
+
+  <!-- Bottom-right: section markers, mirroring portfolio structure -->
+  <text x="1140" y="560" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="-0.3" fill="#111" text-anchor="end" opacity="0.7">
+    01 — About    02 — Works    03 — Experiments    04 — Cases    05 — Texts    06 — Visual
+  </text>
+</svg>

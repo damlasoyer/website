@@ -1,0 +1,151 @@
+/* ===================================================================
+   ABOUT & CV PAGE — Static, single-page, fully indexable
+   Same layout as Cases / Texts
+   =================================================================== */
+
+.cases-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  min-height: 100vh;
+  padding: 2vw;
+  align-items: start;
+}
+
+/* ===== BACK LINK ===== */
+.back-link {
+  grid-column: 2 / 3; grid-row: 1;
+  font-size: 1.5vw; font-weight: 700; line-height: 1;
+  color: #111; text-decoration: none; display: inline-block;
+}
+.back-link:hover { opacity: 0.55; }
+
+/* ===== PAGE TITLE (left) ===== */
+.page-title {
+  grid-column: 2 / 4; grid-row: 1;
+  margin-top: 6vh; font-size: 1vw; font-weight: 700;
+  line-height: 1; letter-spacing: -0.02em;
+}
+
+/* ===== INTRO / ABOUT (right) ===== */
+.cases-intro {
+  grid-column: 8 / 11; grid-row: 1;
+  margin-top: 6vh; max-width: 24vw;
+}
+.cases-intro h1 {
+  margin: 0 0 1.2vh 0; font-size: 0.8vw; font-weight: 700;
+  line-height: 1.05; letter-spacing: -0.02em;
+}
+.cases-intro p {
+  margin: 0; font-size: 0.72vw; line-height: 1.25; letter-spacing: -0.02em;
+}
+
+/* contact block */
+.about-contact {
+  margin-top: 2.4vh;
+}
+.about-contact p {
+  margin: 0 0 0.4vh 0;
+  font-size: 0.72vw; line-height: 1.25; letter-spacing: -0.02em;
+}
+.about-contact a {
+  color: #111; text-decoration: none;
+}
+.about-contact a:hover { opacity: 0.55; }
+
+/* ===== RIGHT NAV (anchor links) ===== */
+.cases-nav {
+  grid-column: 8 / 11; grid-row: 2;
+  margin-top: 4vh;
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+
+.cases-nav-item {
+  display: block;
+  font-size: 0.7vw; font-weight: 400;
+  line-height: 1.2; letter-spacing: -0.02em;
+  color: #111; text-decoration: none;
+  margin-bottom: 0.4vh;
+}
+.cases-nav-item:hover { opacity: 0.55; }
+
+/* ===== CV BODY (left) ===== */
+.cases-body {
+  grid-column: 2 / 7; grid-row: 2;
+  margin-top: 4vh;
+}
+
+.cv-header {
+  margin: 0 0 2.8vh 0;
+  font-size: 0.8vw; font-weight: 700;
+  line-height: 1; letter-spacing: -0.02em;
+}
+
+.case-section {
+  margin-bottom: 3.2vh;
+}
+
+.case-section-title {
+  margin: 0 0 1.2vh 0;
+  font-size: 0.72vw; font-weight: 700;
+  line-height: 1.08; letter-spacing: -0.02em;
+}
+
+.cv-lines p {
+  margin: 0 0 0.3vh 0;
+  font-size: 0.72vw; line-height: 1.34;
+  letter-spacing: -0.02em;
+}
+
+.cv-lines em {
+  font-style: italic;
+}
+
+
+/* ===== MEDIUM SCREENS ===== */
+
+@media (max-width: 1400px) {
+  .page-title { margin-top: 5.5vh; }
+  .cases-intro { margin-top: 2.8vh; max-width: 290px; }
+}
+
+
+/* ===== SMALLER LAPTOP ===== */
+
+@media (max-width: 1200px) {
+  .back-link { font-size: 20px; }
+  .page-title { margin-top: 42px; font-size: 10px; }
+  .cases-intro { margin-top: 24px; max-width: 280px; }
+  .cases-intro h1 { font-size: 10px; }
+  .cases-intro p { font-size: 9px; }
+  .about-contact p { font-size: 9px; }
+
+  .cases-nav-item { font-size: 10px; }
+
+  .cv-header { font-size: 10px; }
+  .case-section-title { font-size: 9px; }
+  .cv-lines p { font-size: 9px; line-height: 1.38; }
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 820px) {
+  .cases-layout { display: block; padding: 24px 18px 36px 18px; }
+  .back-link { display: inline-block; font-size: 26px; margin-bottom: 16px; }
+  .page-title { margin: 0 0 20px 0; font-size: 16px; }
+
+  .cases-intro { margin: 0 0 20px 0; max-width: none; }
+  .cases-intro h1 { font-size: 11px; }
+  .cases-intro p { font-size: 10px; }
+  .about-contact { margin-top: 14px; }
+  .about-contact p { font-size: 10px; }
+
+  .cases-nav { margin: 0 0 28px 0; }
+  .cases-nav-item { font-size: 11px; margin-bottom: 4px; }
+
+  .cases-body { margin-top: 0; }
+  .cv-header { font-size: 11px; margin-bottom: 16px; }
+  .case-section { margin-bottom: 20px; }
+  .case-section-title { font-size: 10px; margin-bottom: 8px; }
+  .cv-lines p { font-size: 10px; line-height: 1.4; }
+}
